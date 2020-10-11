@@ -4,32 +4,40 @@ import {NavLink} from 'react-router-dom';
 
 const newsKinds = [
     {
-        kind: 'hankyong',
-        display: '한국경제신문'
+        kind: 'primary_income_account',
+        display: '#본원소득수지'
     },
     {
-        kind: 'mk',
-        display: '매일경제'
+        kind: 'good_balance',
+        display: '#상품수지'
+    },
+    {
+        kind: 'service_balance',
+        display: '#서비스 수지'
+    },
+    {
+        kind: 'exchange_won_dollar',
+        display: '#원달러 환율'
+    },
+    {
+        kind: 'exchange_renmibi_dollar',
+        display: '#위안화 환율'
     }
 ];
-
-// newsKinds.map(newsPaper => {
-//     return (
-//
-//     );
-// })
 
 class Menubar extends Component {
     render(){
         return (
             <div className="menubar">
                 {
-                    newsKinds.map(newsPaper => (
-                        <NavLink className="menu"
+                    newsKinds.map((newsPaper, index) => (
+                        <NavLink
+                            // className={index === 0 ? 'menu active' : 'menu'}
+                             className="menu"
                              activeClassName="active"
-                             exact={newsPaper.kind==='hankyong'}
-                             // to={newsPaper.kind === 'hankyong' ? `/hankyong` : `/${newsPaper.kind}` }
-                             to={'/'+newsPaper.kind}
+                             exact={newsPaper.kind ==='primary_income_account'}
+                             to={newsPaper.kind === 'primary_income_account' ? '/' : `/${newsPaper.kind}` }
+                             // to={'/'+newsPaper.kind}
                              key={newsPaper.kind}
                         >
                             {newsPaper.display}
@@ -38,12 +46,6 @@ class Menubar extends Component {
                 }
             </div>
         );
-        // return (
-        //     <div className="menubar">
-        //         <div className="menu"> 한국경제신문 </div>
-        //         <div className="menu"> 매일경제 </div>
-        //     </div>
-        // )
     }
 }
 

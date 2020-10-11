@@ -1,3 +1,18 @@
+
+# 프로젝트 목표
+lognomy 에는 아래의 기능들을 제공하려 한다. 
+- 차트메뉴
+- 일간 키워드 검색 뉴스 메뉴
+
+이번 프로젝트에서는 일간 키워드 검식 뉴스 메뉴를 위한 라우터/state 코드를 작성할 예정이다.  
+react hooks api, 함수형 컴포넌트, useEffect, useState 등의 기능을 활용해 최신 버전의 react 기능들을 적용해보는게 목표이다.     
+
+# 현재 진행 상황
+## 2020/10월 둘째주
+![이미지](./md/img/react_screenshot_20201011.gif)
+
+
+# 설치시 제공된 yarn 명령어 정리
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
