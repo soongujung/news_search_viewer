@@ -12,7 +12,7 @@ react hooks api, 함수형 컴포넌트, useEffect, useState 등의 기능을 �
 ![이미지](./md/img/react_screenshot_20201011.gif)
 
 
-# npm 기본제공 yarn 기초 명령어리스트 
+# 기본제공 yarn 기초 명령어리스트 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
