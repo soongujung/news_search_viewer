@@ -1,0 +1,40 @@
+.newsItem {
+    display: flex;
+    margin-top: 3rem;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.thumbnail {
+    margin-right: 1rem;
+}
+
+.thumbnail .img {
+    display: block;
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.contents h2 {
+    margin: 0
+}
+
+.contents h2 a {
+    color: black;
+}
+
+.contents p {
+    margin: 0;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    white-space: normal;
+}

@@ -3,12 +3,13 @@
     padding: 1rem;
     width: 768px;
     margin: 0 auto;
-    /*@media screen and (max-width: 768px){*/
-    /*    .menubar {*/
-    /*        width: 100%;*/
-    /*        overflow-x: auto;*/
-    /*    }*/
-    /*}*/
+}
+
+@media screen and (max-width: 768px){
+    .menubar {
+        width: 100%;
+        overflow-x: auto;
+    }
 }
 
 .menubar .menu {
