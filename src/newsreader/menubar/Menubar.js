@@ -35,9 +35,9 @@ class Menubar extends Component {
                             // className={index === 0 ? 'menu active' : 'menu'}
                              className="menu"
                              activeClassName="active"
-                             exact={newsPaper.kind ==='primary_income_account'}
-                             to={newsPaper.kind === 'primary_income_account' ? '/' : `/${newsPaper.kind}` }
-                             // to={'/'+newsPaper.kind}
+                             // exact={newsPaper.kind ==='primary_income_account'}
+                             // to={newsPaper.kind === 'primary_income_account' ? '/' : `/${newsPaper.kind}` }
+                             to={`/${newsPaper.kind}`}
                              key={newsPaper.kind}
                         >
                             {newsPaper.display}

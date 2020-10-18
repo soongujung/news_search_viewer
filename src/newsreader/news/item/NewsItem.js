@@ -2,19 +2,25 @@ import React from 'react';
 import './NewsItem.css';
 
 
-const NewsItem = ({news}) => {
-    const { title, description, url, urlToImage } = news;
+const NewsItem = ({news, logoUrl}) => {
+    const {
+        title,
+        originallink,
+        link,
+        pubDate,
+        description
+    } = news;   // https://newsapi.org
 
     return (
       <div className="newsItem">
           <div className="thumbnail">
-              <a href={url} rel="noopener noreferrer">
-                  <img src={urlToImage} alt="thumbnail"/>
+              <a href={link} rel="noopener noreferrer">
+                  <img src={logoUrl} alt="thumbnail"/>
               </a>
           </div>
           <div className="contents">
               <h2>
-                  <a href={url} rel="noopener noreferrer">
+                  <a href={link} rel="noopener noreferrer">
                       {title}
                   </a>
               </h2>

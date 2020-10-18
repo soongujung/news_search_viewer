@@ -16,6 +16,8 @@ export default function usePromise(promiseCreator, deps) {
             catch (e){
                 updateErrorData(e);
             }
+
+            updateLoadingFlag(false);
         };
 
         process();
